@@ -1,0 +1,23 @@
+---
+layout: default
+title: Graphic Design, Reykjavík, Iceland
+---
+
+<section id="grid" class="clearfix wrapper">
+  {% for post in site.posts %}
+    <div class="worksample">
+      <div class="item">
+        <a href="{{ post.url }}" class="workitem-link">
+          <span class="caption"><figcaption><img class="workicon" src="images/more.svg"><span class="captiontext">More!</span></figcaption></span>
+          <img class="workimage" src="{{ post.thumb }}">
+        </a>
+      </div>
+      <!--<p>{{ post.title }}</p>-->
+      <p>{{ post.excerpt }}</p>
+    </div>
+  {% endfor %}
+</section>
+
+<footer class="wrapper clearfix">
+  Check out the archive at <a class="out" href="https://www.behance.net/ragnarfreyr">Béhance</a> and head to <a class="out" href="http://www.dribbble.com/ragnarfreyr">Dribbble</a> for new projects and work in progress.
+</footer>
